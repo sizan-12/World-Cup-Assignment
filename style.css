@@ -51,7 +51,7 @@
     margin-top: 36px;
 }
 /* ----------------
-    Main Part Styles - Navbar
+    Main Part Styles - Left Navbar
 -----------------*/
 .left-navbar {
     width: 210px;
@@ -154,7 +154,6 @@ main {
 -----------------*/
 .footer-container {
     background: #161616;
-    /* height: 300px; */
     overflow: hidden;
 }
 .footer-content {
