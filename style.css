@@ -136,3 +136,50 @@ main {
     margin-right: 20px;
     color: rgba(22, 22, 22, 0.7);
 }
+.view-all-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    display: none;
+}
+.view-all-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #DD0000;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+/* ----------------
+    Footer Styles
+-----------------*/
+.footer-container {
+    background: #161616;
+    /* height: 300px; */
+    overflow: hidden;
+}
+.footer-content {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+hr {
+     border-style: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     width: 87%;
+     margin: 40px auto 40px;
+}
+.footer-nav .pages a {
+    text-decoration: none;
+    color: #B9B9B9;
+    font-size: 14px;
+}
+.pages {
+    margin-right: 30px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
