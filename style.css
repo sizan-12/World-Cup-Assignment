@@ -27,6 +27,9 @@ body {
     width: 50%;
     color: #fff;
 }
+.w-50 .break-for-mobile {
+    display: none;
+}
 .w-50 h1 {
     font-size: 40px;
     line-height: 50px;
@@ -189,13 +192,151 @@ hr {
     justify-content: center;
     margin-bottom: 75px;
 }
+.social-media {
+    display: none;
+}
+/* ----------------
+    Media Quiries for - Mobile
+-----------------*/
+@media only screen and (min-width:375px) {
+    .container {
+        width: 350px;
+        height: 550px;
+        background: #161616;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto 85px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .w-50 {
+        width: 100%;
+        color: #fff;
+    }
+    .w-50 .break-for-mobile {
+        display: block;
+    }
+    .w-50 .break {
+        display: none;
+    }
+    .w-50 h1 {
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .w-50 p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 8px;
+    }
+    .w-50.left-content {
+        margin-left: 0px;
+        margin-top: 35px;
+    }
+    .w-50 button {
+        margin: 25px 104px 0;
+        background-color: #DD0000;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 3px;
+        color: #fff;
+    } 
+    .w-50 img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 36px;
+    } 
+    main {
+        display: block;
+    } 
+    .left-navbar {
+        width: 100%;
+        height: 0;
+        margin: 100px 0 100px 0px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    .button-1 {
+        padding: 10px 45px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+    }
+    .button-2 {
+        padding: 10px 78px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+    }
+    .button-3 {
+        padding: 10px 98px;
+        border-radius: 6px;
+        background: #DD0000;
+    }
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1,0fr);
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin-bottom: 45px;
+    }
+    .blog {
+        width: 350px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+    }
+    .blog h4 {
+        margin: 12px 0 12px 15px;
+        font-size: 20px; 
+    }
+    .last-blog {
+        display: none;
+    }
+    .footer-content {
+        margin-top: 35px;
+    }
+    hr {
+        border-style: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 87%;
+        margin: 20px auto 20px;
+   }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+        margin-bottom: 30px;   
+    }
+    .social-media {
+        display: flex;
+        column-gap: 24px;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .social-media .social-media-icon i {
+        color: #fff;
+        font-size: 18px;
+
+    }
+}
 /* ----------------
     Media Quiries for - TAB
 -----------------*/  
-@media only screen and (min-width:835px) and (max-width:1023px) {
+@media only screen and (min-width:768px) and (max-width:992px) {
     .container {
         width: 725px;
         height: 420px;
+    }
+    .w-50 .break-for-mobile {
+        display: none;
     }
     .w-50 img {
         width: 330px;
@@ -248,6 +389,9 @@ hr {
         border: 1px solid lightgray;
         border-radius: 7px;
     }
+    .last-blog {
+        display: none;
+    }
     .blog h4 {
         margin: 12px 0 12px 15px;
         font-size: 16px; 
@@ -270,5 +414,7 @@ hr {
     .app-page, .live-page {
         margin: 0px -360px 0px 0px;        
     }
-    
-}
+    .social-media {
+        display: none;
+    }  
+} 
