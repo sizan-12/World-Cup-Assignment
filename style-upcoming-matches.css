@@ -1,0 +1,21 @@
+.blog .flags {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 30px 0 10px;
+}
+.blog .flag img{
+    width: 70px;
+}
+.blog h4 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+.blog p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
