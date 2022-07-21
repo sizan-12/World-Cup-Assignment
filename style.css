@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 body {
-    
+   max-width: 1400;
+   margin: auto; 
 }
 /* ----------------
     Header Part Styles
@@ -250,7 +251,7 @@ hr {
         justify-content: center;
         column-gap: 15px;
         row-gap: 15px;
-        margin-bottom: 85px;
+        margin-bottom: 50px;
     }
     .blog {
         width: 355px;
