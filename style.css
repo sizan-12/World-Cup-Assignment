@@ -46,6 +46,13 @@ body {
     padding: 8px 15px;
     border-radius: 3px;
     color: #fff;
+    transition: padding 1s linear;
+}
+.w-50 button:hover {
+    background-color: yellow;
+    color: #000;
+    padding: 8px 30px; 
+    border: 1.5px solid blue;  
 }
 .w-50.left-content {
     margin-left: 50px;
