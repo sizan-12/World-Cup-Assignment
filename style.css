@@ -7,11 +7,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    
+}
 /* ----------------
     Header Part Styles
 -----------------*/
 .container {
     width: 87%;
+    max-width: 885px;
     height: 440px;
     background: #161616;
     display: flex;
@@ -136,6 +140,9 @@ main {
     margin-right: 20px;
     color: rgba(22, 22, 22, 0.7);
 }
+/* ----------------
+    View All Button - Styles
+-----------------*/
 .view-all-button {
     display: flex;
     justify-content: center;
@@ -175,10 +182,81 @@ hr {
     font-size: 14px;
 }
 .pages {
-    margin-right: 30px;
+    margin: 0px 15px 0px 15px;
 }
 .footer-nav {
     display: flex;
     justify-content: center;
     margin-bottom: 75px;
+}
+/* ----------------
+    Media Quiries for - TAB
+-----------------*/  
+@media only screen and (min-width:835px) and (max-width:1023px) {
+    main {
+        display: block;
+    }
+    .left-navbar {
+        width: 100%;
+        height: 0;
+        margin-bottom: 55px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    .button-1 {
+        padding: 10px 45px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+    }
+    .button-2 {
+        padding: 10px 78px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+    }
+    .button-3 {
+        padding: 10px 98px;
+        border-radius: 6px;
+        background: #DD0000;
+    }
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,0fr);
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin-bottom: 85px;
+    }
+    .blog {
+        width: 355px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+    }
+    .blog h4 {
+        margin: 12px 0 12px 15px;
+        font-size: 16px; 
+    }
+    .view-all-button {
+        margin-bottom: 40px;
+        display: flex;
+    }
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 180px 180px 180px 180px;
+        justify-items: center;
+        column-gap: 0px;
+        row-gap: 35px;
+        
+    }
+    .pages {
+        margin: 0px 0px 0px 0px;
+    }
+    .app-page, .live-page {
+        margin: 0px -360px 0px 0px;        
+    }
+    
 }
